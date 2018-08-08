@@ -80,13 +80,15 @@ require 'pry'
         person.happiness -= 2
         #binding.pry
          return 'blah blah partisan blah lobbyist'
-      end 
-      if (topic == "weather")
+      elsif (topic == "weather")
         self.happiness= @happiness  + 1
         person.happiness += 1
         #binding.pry
          return 'blah blah sun blah rain'
+       else 
+         return 
       end
+      
     end 
   end
     malcome = Person.new("malcome")
